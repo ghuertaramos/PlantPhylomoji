@@ -1,4 +1,4 @@
-#GitHub Repository for the Phylogeny of Plant Emojis
+# GitHub Repository for the Phylogeny of Plant Emojis
 
 
 
