@@ -21,6 +21,9 @@ ggtree(x, layout="circular") +
   geom_tiplab(aes(color=label), parse='emoji', size=6, vjust=0.5, hjust = 0.5, offset = 0.9) +
   labs(title="plant phylomoji", caption="powered by ggtree + emojifont")
 
+# relaxed parenthetical tree
+# plant byproducts, debatable species ID
+
 tree_text <- "((herb,four_leaf_clover),(evergreen_tree,(avocado,((tulip, ( palm_tree, ( banana, ( pineapple, (corn, ( tanabata_tree, ear_of_rice )))))),((grapes, (((peanuts, shamrock), ((( rose, strawberry ), ((apple, pear ), ( peach, (cherry_blossom, cherries) ))), (chestnut, (jack_o_lantern, (watermelon, (cucumber, melon)))))), ((hibiscus, chocolate_bar), (( tangerine, lemon ), (maple_leaf))))),(cactus, (kiwi_fruit,((cocktail, (sweet_potato, (smoking,(hot_pepper, (eggplant, (potato, tomato)))))), (carrot,(sunflower, blossom))))))))));"
 
 x <- read.tree(text=tree_text)
