@@ -14,7 +14,7 @@
    
   [Plant Phylomoji on Jupyter](https://github.com/ghuertaramos/PlantPhylomoji/blob/master/PlantPhylomoji.ipynb)
 
-   [Plant Phylomoji Development Log](https://github.com/ghuertaramos/PlantPhylomoji/blob/master/PlantPhylomoji.md)
+   [Plant Phylomoji Development Log](./PlantPhylomojiLog.md)
 
  The general objective of this project is to generate teaching material in the topics of evolution and systematics. 
  
