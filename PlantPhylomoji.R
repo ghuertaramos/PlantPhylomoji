@@ -10,26 +10,41 @@ library(ggplot2)
 library(ggtree)
 library(emojifont)
 
-# strict parenthetical tree
+# load datasets
+load("./data/datasets.RData")
+# strict datasets
 # only plants, clear species ID
-tree_text <- "(evergreen_tree,(avocado,((tulip, ( palm_tree, ( banana, ( pineapple, (corn, ( tanabata_tree, ear_of_rice )))))),((grapes, (((peanuts, shamrock), ((( rose, strawberry ), ((apple, pear ), ( peach, (cherry_blossom, cherries) ))), (chestnut, (jack_o_lantern, (watermelon, (cucumber, melon)))))), (hibiscus, (( tangerine, lemon ), (maple_leaf))))),(cactus, (kiwi_fruit, ((sweet_potato, (hot_pepper, (eggplant, (potato, tomato)))), (carrot,(sunflower, blossom)))))))));"
+# monocots
+# superasterids
+# superrosids
+# angiosperms
+# complete
 
-x <- read.tree(text=tree_text)
+# relaxed datasets
+# plant byproducts, debatable species ID
+# monocots_r
+# superasterids_r
+# superrosids_r
+# angiosperms_r
+# complete_r
+
+x <- read.tree(text=complete)
 
 ggtree(x, layout="circular") +
-  xlim(NA, 13) + ylim(NA, 39) +
   geom_tiplab(aes(color=label), parse='emoji', size=6, vjust=0.5, hjust = 0.5, offset = 0.9) +
   labs(title="plant phylomoji", caption="powered by ggtree + emojifont")
 
-# relaxed parenthetical tree
-# plant byproducts, debatable species ID
+# Example of complete_relaxed dataset
 
-tree_text <- "((herb,four_leaf_clover),(evergreen_tree,(avocado,((tulip, ( palm_tree, ( banana, ( pineapple, (corn, ( tanabata_tree, ear_of_rice )))))),((grapes, (((peanuts, shamrock), ((( rose, strawberry ), ((apple, pear ), ( peach, (cherry_blossom, cherries) ))), (chestnut, (jack_o_lantern, (watermelon, (cucumber, melon)))))), ((hibiscus, chocolate_bar), (( tangerine, lemon ), (maple_leaf))))),(cactus, (kiwi_fruit,((cocktail, (sweet_potato, (smoking,(hot_pepper, (eggplant, (potato, tomato)))))), (carrot,(sunflower, blossom))))))))));"
-
-x <- read.tree(text=tree_text)
+x <- read.tree(text=complete_r)
 
 ggtree(x, layout="circular") +
-  xlim(NA, 17) + ylim(NA, 44) +
-  geom_tiplab(aes(color=label), parse='emoji', size=6, vjust=0.5, hjust = 0.5, offset = 1.1) +
-  labs(title="plant phylomoji", caption="powered by ggtree + emojifont")
+  geom_tiplab(aes(color=label), parse='emoji', size=6, vjust=0.5, hjust = 0.5, offset = 0.9) +
+  labs(title="plant phylomoji (Relaxed Dataset)", caption="powered by ggtree + emojifont")
 
+# Example of subset "superrosids"
+x <- read.tree(text=superrosids)
+
+ggtree(x, layout="circular") +
+  geom_tiplab(aes(color=label), parse='emoji', size=6, vjust=0.5, hjust = 0.5, offset = 0.9) +
+  labs(title="plant phylomoji (Superrosids)", caption="powered by ggtree + emojifont")
