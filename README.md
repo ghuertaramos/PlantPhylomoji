@@ -3,7 +3,9 @@
   This repository features a dataset and scripts to produce a phylogeny of plants represented by ideograms.
   
   <p align="center">
+  
 ![](./data/StrictPhylomoji.png) 
+
 </p>
 
    [Plant Phylomoji Dataset](https://github.com/ghuertaramos/PlantPhylomoji/blob/master/Dataset.md)
