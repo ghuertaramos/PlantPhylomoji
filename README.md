@@ -8,11 +8,11 @@
 
 </p>
 
-   [Plant Phylomoji Dataset](https://github.com/ghuertaramos/PlantPhylomoji/blob/master/Dataset.md)
+   [Plant Phylomoji Dataset](./Dataset.md)
 
-   [Plant Phylomoji R Script](https://github.com/ghuertaramos/PlantPhylomoji/blob/master/PlantPhylomoji.R)
+   [Plant Phylomoji R Script](./PlantPhylomoji.R)
    
-  [Plant Phylomoji on Jupyter](https://github.com/ghuertaramos/PlantPhylomoji/blob/master/PlantPhylomoji.ipynb)
+  [Plant Phylomoji on Jupyter](./PlantPhylomoji.ipynb)
 
    [Plant Phylomoji Development Log](./PlantPhylomojiLog.md)
 
