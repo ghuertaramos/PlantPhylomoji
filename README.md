@@ -18,7 +18,7 @@
 
  The general objective of this project is to generate teaching material in the topics of evolution and systematics. 
  
- Particularly, I want to provide figures to help undergrad students to understand concepts about phylogenetic trees.  Moreover, I want to write a series of tutorials on tree manipulation using this dataset on R
+ Particularly, I want to provide figures to help undergrad students concepts about phylogenetic trees.  Moreover, I want to write a series of tutorials on tree manipulation using this dataset on R
   
  
  WORK IN PROGRESS
