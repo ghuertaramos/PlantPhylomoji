@@ -1,7 +1,7 @@
 #Load Libraries
 library(ggplot2)
 
-#ggtree and emojifont can be insalled from bioconductor
+#ggtree and emojifont can be installed from bioconductor
 #if (!requireNamespace("BiocManager", quietly = TRUE))
 #   install.packages("BiocManager")
 #BiocManager::install("ggtree")
@@ -9,25 +9,25 @@ library(ggplot2)
 
 library(ggtree)
 library(emojifont)
-
-# load datasets
-load("./data/datasets.RData")
-# strict datasets
-# only plants, clear species ID
+## datasets
+## strict datasets (only plants, clear species ID)
 # monocots
 # superasterids
 # superrosids
 # angiosperms
 # complete
 
-# relaxed datasets
-# plant byproducts, debatable species ID
+## relaxed datasets (plant byproducts, debatable species ID)
 # monocots_r
 # superasterids_r
 # superrosids_r
 # angiosperms_r
 # complete_r
 
+# load datasets
+load("./data/datasets.RData")
+
+# change "text=" to the dataset you want
 x <- read.tree(text=complete)
 
 ggtree(x, layout="circular") +
