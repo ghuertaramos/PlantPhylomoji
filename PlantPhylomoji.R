@@ -9,25 +9,38 @@ library(ggplot2)
 
 library(ggtree)
 library(emojifont)
-## datasets
-## strict datasets (only plants, clear species ID)
-# monocots
-# superasterids
-# superrosids
-# angiosperms
-# complete
-
-## relaxed datasets (plant byproducts, debatable species ID)
-# monocots_r
-# superasterids_r
-# superrosids_r
-# angiosperms_r
-# complete_r
 
 # load datasets
 load("./data/datasets.RData")
 
-# change "text=" to the dataset you want
+## datasets
+## strict datasets (only plants, clear species ID)
+
+#monocots <- "( tulip, ( palm_tree, ( banana, ( pineapple, ( corn, ( tanabata_tree, ear_of_rice ))))));"
+
+#superasterids <- "( cactus, ( kiwi_fruit, (( sweet_potato, ( hot_pepper, ( eggplant, ( potato, tomato)))), ( carrot,( sunflower, blossom)))));"
+
+#superrosids <- "( grapes, ((( peanuts, shamrock), ((( rose, strawberry ), (( apple, pear ), ( peach, ( cherry_blossom, cherries) ))), ( chestnut, ( jack_o_lantern, ( watermelon, ( cucumber, melon)))))), (hibiscus, (( tangerine, lemon ), ( maple_leaf)))));"
+
+#angiosperms <- "( avocado,(( tulip, ( palm_tree, ( banana, ( pineapple, ( corn, ( tanabata_tree, ear_of_rice )))))),(( grapes, ((( peanuts, shamrock), ((( rose, strawberry ), (( apple, pear ), ( peach, (cherry_blossom, cherries) ))), ( chestnut, ( jack_o_lantern, ( watermelon, ( cucumber, melon)))))), ( hibiscus, (( tangerine, lemon ), ( maple_leaf))))),( cactus, ( kiwi_fruit, (( sweet_potato, ( hot_pepper, (eggplant, ( potato, tomato)))), ( carrot,( sunflower, blossom))))))));"
+
+#complete <- "( evergreen_tree,( avocado,(( tulip, ( palm_tree, ( banana, ( pineapple, ( corn, ( tanabata_tree, ear_of_rice )))))),(( grapes, ((( peanuts, shamrock), ((( rose, strawberry ), (( apple, pear ), ( peach, (cherry_blossom, cherries) ))), ( chestnut, ( jack_o_lantern, ( watermelon, ( cucumber, melon)))))), ( hibiscus, (( tangerine, lemon ), ( maple_leaf))))),( cactus, ( kiwi_fruit, (( sweet_potato, ( hot_pepper, (eggplant, ( potato, tomato)))), ( carrot,( sunflower, blossom)))))))));"
+
+## relaxed datasets (plant byproducts, debatable species ID)
+
+#monocots_r <- "( tulip, ( palm_tree, ( banana, ( pineapple, ( corn, ( tanabata_tree, ear_of_rice ))))));"
+
+#superasterids_r <- "( cactus, ( kiwi_fruit,(( cocktail, ( sweet_potato, ( hot_pepper, ( eggplant, ( potato, tomato))))), ( carrot,( sunflower, blossom)))));"
+
+#superrosids_r <- "(( grapes, ((( peanuts, shamrock), ((( rose, strawberry ), (( apple, pear ), ( peach, ( cherry_blossom, cherries) ))), ( chestnut, ( jack_o_lantern, ( watermelon, ( cucumber, melon)))))), (( hibiscus, chocolate_bar), (( tangerine, lemon ), ( maple_leaf))))));"
+
+#angiosperms_r <- "( avocado,(( tulip, ( palm_tree, ( banana, ( pineapple, (corn, ( tanabata_tree, ear_of_rice )))))),(( grapes, ((( peanuts, shamrock), ((( rose, strawberry ), ((apple, pear ), ( peach, (cherry_blossom, cherries) ))), ( chestnut, ( jack_o_lantern, ( watermelon, ( cucumber, melon)))))), (( hibiscus, chocolate_bar), (( tangerine, lemon ), ( maple_leaf))))),( cactus, ( kiwi_fruit,(( cocktail, (sweet_potato, ( smoking,( hot_pepper, ( eggplant, ( potato, tomato)))))), ( carrot,( sunflower, blossom))))))));"
+
+#complete_r <- "(( herb, four_leaf_clover),( evergreen_tree,( avocado,(( tulip, ( palm_tree, ( banana, ( pineapple, ( corn, ( tanabata_tree, ear_of_rice )))))),(( grapes, ((( peanuts, shamrock), ((( rose, strawberry ), (( apple, pear ), ( peach, ( cherry_blossom, cherries) ))), ( chestnut, ( jack_o_lantern, ( watermelon, ( cucumber, melon)))))), (( hibiscus, chocolate_bar), (( tangerine, lemon ), (maple_leaf))))),( cactus, ( kiwi_fruit,(( cocktail, ( sweet_potato, ( smoking,( hot_pepper, ( eggplant, ( potato, tomato)))))), ( carrot,( sunflower, blossom))))))))));"
+
+
+# "text=" name of the dataset you want
+
 x <- read.tree(text=complete)
 
 ggtree(x, layout="circular") +
