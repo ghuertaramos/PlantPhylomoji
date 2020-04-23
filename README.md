@@ -16,9 +16,9 @@
 
    [Plant Phylomoji Development Log](./PlantPhylomojiLog.md)
 
- The general objective of this project is to generate teaching material in the topics of evolution and systematics. 
+ The general objective of this project is to generate interest in the topics of phylogenetics and evolution in the general public using emojis.
  
- Particularly, I want to provide figures to help undergrad students understand concepts about phylogenetic trees.  Moreover, I want to write a series of tutorials on tree manipulation using this dataset on R
+ Additionaly,its is my intention to provide academic audience with teaching material in the topics of evolution and systematics.  Particularly, I want to provide figures to help undergrad students understand concepts about phylogenetic trees.
   
  
  WORK IN PROGRESS
