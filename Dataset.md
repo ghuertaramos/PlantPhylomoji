@@ -1,50 +1,50 @@
-The plant phylomoji dataset features the following: 
+The plant phylomoji dataset features the following plant species: 
 
 | Name            | Emoji | Emoji text code  | Species                  |
 |-----------------|-------|------------------|--------------------------|
-| Fern            | 🌿     | herb             | *Mickelia*               |
-| Water Clover    | 🍀     | four_leaf_clover | *Marsilea*               |
-| Pine            | 🌲     | evergreen_tree   | *Pinus*                  |
-| Avocado         | 🥑     | avocado          | *Persea americana*       |
-| Tulip           | 🌷     | tulip            | *Tulipa*                 |
-| Palm            | 🌴     | palm_tree        | *Cocos nucifera*         |
-| Banana          | 🍌     | banana           | *Musa x paradisiaca*     |
-| Pineapple       | 🍍     | pineapple        | *Ananas comosus*         |
-| Corn            | 🌽     | corn             | *Zea mays*               |
-| Bamboo          | 🎋     | tanabata_tree    | *Phyllostachys*         |
-| Rice            | 🌾     | ear_of_rice      | *Oryza sativa*           |
-| Grapes          | 🍇     | grapes           | *Vitis vinifera*         |
-| Peanuts         | 🥜     | peanuts          | *Arachis hypogaea*       |
-| Clover          | ☘️     | shamrock         | *Trifolium*              |
-| Rose            | 🌹     | rose             | *Rosa*                   |
-| Strawberry      | 🍓     | strawberry       | *Fragaria vesca*         |
 | Apple           | 🍎     | apple            | *Malus domestica*        |
-| Pear            | 🍐     | pear             | *Pyrus malus*            |
-| Peach           | 🍑     | peach            | *Prunus persica*         |
-| Japanese Cherry | 🌸     | cherry_blossom   | *Prunus x yedoensis*     |
+| Avocado         | 🥑     | avocado          | *Persea americana*       |
+| Bamboo          | 🎋     | tanabata_tree    | *Phyllostachys*          |
+| Banana          | 🍌     | banana           | *Musa x paradisiaca*     |
+| Carrot          | 🥕     | carrot           | *Daucus carota*          |
 | Cherry          | 🍒     | cherries         | *Prunus avium*           |
 | Chestnut        | 🌰     | chestnut         | *Castanea dentata*       |
-| Pumpkin         | 🎃     | jack_o_lantern   | *Cucurbita maxima*       |
-| Watermelon      | 🍉     | watermelon       | *Citrullus lanatus*      |
-| Cucumber        | 🥒     | cucumber         | *Cucumis sativus*        |
-| Melon           | 🍈     | melon            | *Cucumis melo*           |
-| Hibiscus        | 🌺     | hibiscus         | *Hibiscus rosa-sinensis* |
+| Chili Pepper    | 🌶️     | hot_pepper       | *Capsicum annuum*        |
 | Chocolate       | 🍫     | chocolate_bar    | *Theobroma cacao*        |
-| Tangerine       | 🍊     | tangerine        | *Citrus reticulata*      |
+| Clover          | ☘️     | shamrock         | *Trifolium*              |
+| Corn            | 🌽     | corn             | *Zea mays*               |
+| Cucumber        | 🥒     | cucumber         | *Cucumis sativus*        |
+| Daisy           | 🌼     | blossom          | *Bellis perennis*        |
+| Eggplant        | 🍆     | eggplant         | *Solanum melongena*      |
+| Fern            | 🌿     | herb             | *Mickelia*               |
+| Grapes          | 🍇     | grapes           | *Vitis vinifera*         |
+| Hibiscus        | 🌺     | hibiscus         | *Hibiscus rosa-sinensis* |
+| Japanese Cherry | 🌸     | cherry_blossom   | *Prunus x yedoensis*     |
+| Kiwi            | 🥝     | kiwi_fruit       | *Actinidia deliciosa*    |
 | Lemon           | 🍋     | lemon            | *Citrus × limon*         |
 | Maple           | 🍁     | maple_leaf       | *Acer*                   |
-| Saguaro         | 🌵     | cactus           | *Carnegiea gigantea*     |
-| Kiwi            | 🥝     | kiwi_fruit       | *Actinidia deliciosa*    |
+| Melon           | 🍈     | melon            | *Cucumis melo*           |
 | Olive           | 🍸️     | cocktail         | *Olea europaea*          |
-| Sweet potato    | 🍠     | sweet_potato     | *Ipomoea batatas*        |
-| Tobacco         | 🚬     | smoking          | *Nicotiana tabacum*      |
-| Chili Pepper    | 🌶️     | hot_pepper       | *Capsicum annuum*        |
-| Eggplant        | 🍆     | eggplant         | *Solanum melongena*      |
+| Palm            | 🌴     | palm_tree        | *Cocos nucifera*         |
+| Peach           | 🍑     | peach            | *Prunus persica*         |
+| Peanuts         | 🥜     | peanuts          | *Arachis hypogaea*       |
+| Pear            | 🍐     | pear             | *Pyrus malus*            |
+| Pine            | 🌲     | evergreen_tree   | *Pinus*                  |
+| Pineapple       | 🍍     | pineapple        | *Ananas comosus*         |
 | Potato          | 🥔     | potato           | *Solanum tuberosum*      |
-| Tomato          | 🍅     | tomato           | *Solanum lycopersicum*   |
-| Carrot          | 🥕     | carrot           | *Daucus carota*          |
+| Pumpkin         | 🎃     | jack_o_lantern   | *Cucurbita maxima*       |
+| Rice            | 🌾     | ear_of_rice      | *Oryza sativa*           |
+| Rose            | 🌹     | rose             | *Rosa*                   |
+| Saguaro         | 🌵     | cactus           | *Carnegiea gigantea*     |
+| Strawberry      | 🍓     | strawberry       | *Fragaria vesca*         |
 | Sunflower       | 🌻     | sunflower        | *Helianthus annuus*      |
-| Daisy           | 🌼     | blossom          | *Bellis perennis*        |
+| Sweet potato    | 🍠     | sweet_potato     | *Ipomoea batatas*        |
+| Tangerine       | 🍊     | tangerine        | *Citrus reticulata*      |
+| Tobacco         | 🚬     | smoking          | *Nicotiana tabacum*      |
+| Tomato          | 🍅     | tomato           | *Solanum lycopersicum*   |
+| Tulip           | 🌷     | tulip            | *Tulipa*                 |
+| Water Clover    | 🍀     | four_leaf_clover | *Marsilea*               |
+| Watermelon      | 🍉     | watermelon       | *Citrullus lanatus*      |
 
 # Monocots
 
