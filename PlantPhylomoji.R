@@ -14,6 +14,9 @@ library(emojifont)
 load("./data/datasets.RData")
 
 ## datasets
+
+# you can edit the previously loaded datasets by uncommenting and modifying the following
+
 ## strict datasets (only plants, clear species ID)
 
 #monocots <- "( tulip, ( palm_tree, ( banana, ( pineapple, ( corn, ( tanabata_tree, ear_of_rice ))))));"
@@ -51,13 +54,13 @@ ggtree(x, layout="circular") +
 
 x <- read.tree(text=complete_r)
 
-ggtree(x, layout="circular") +
+ggtree(dataset, layout="circular") +
   geom_tiplab(aes(color=label), parse='emoji', size=6, vjust=0.5, hjust = 0.5, offset = 0.9) +
   labs(title="plant phylomoji (Relaxed Dataset)", caption="powered by ggtree + emojifont")
 
 # Example of subset "superrosids"
-x <- read.tree(text=superrosids)
+dataset <- read.tree(text=superrosids)
 
-ggtree(x, layout="circular") +
+ggtree(dataset, layout="circular") +
   geom_tiplab(aes(color=label), parse='emoji', size=6, vjust=0.5, hjust = 0.5, offset = 0.9) +
   labs(title="plant phylomoji (Superrosids)", caption="powered by ggtree + emojifont")
