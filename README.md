@@ -5,10 +5,8 @@
   The general objective of this project is to provide a resource for teachers, students, and researchers interested in phylogenetic trees and plant evolution.
  
   
-  <p align="center">
-  
-![](./images/plantphylomoji.png) 
-
+  <p align="center">  
+<img width="600" height="600" src="./images/plantphylomoji.png">
 </p>
 
    [Plant Phylomoji Dataset](./Dataset.md)
