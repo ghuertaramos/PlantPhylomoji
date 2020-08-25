@@ -1,3 +1,6 @@
+25/8/2020
+After a long while I am picking up this project, during last year I've only added minor fixes. However,  this semester I will be teaching an undergraduate systematics course, so I'll probably be able to progress on generating figures and lectures using this dataset.
+Another priority is to write a manuscript to make the dataset citable. Through the recent publication of [Escudero & Wendel, 2020](https://nph.onlinelibrary.wiley.com/doi/abs/10.1111/nph.16802), I realize this project could have a wider impact and citations would be desirable.
 
 18/10/2019
 I began subsetting the plant phylomoji dataset. It could be easier to work with a reduced number of terminals on some scenarios.
