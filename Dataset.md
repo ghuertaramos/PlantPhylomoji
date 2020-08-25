@@ -1,4 +1,4 @@
-#PlantPhylomoji Dataset
+# PlantPhylomoji Dataset
 
 The plant phylomoji dataset features the following plant species: 
 
@@ -6,37 +6,37 @@ The plant phylomoji dataset features the following plant species:
 |-----------------|-------|------------------|--------------------------|
 | Apple           | 🍎     | apple            | *Malus domestica*        |
 | Avocado         | 🥑     | avocado          | *Persea americana*       |
-| Bamboo          | 🎋     | tanabata_tree    | *Phyllostachys*          |
+| Bamboo          | 🎋     | tanabata_tree    | *Phyllostachys sp.*          |
 | Banana          | 🍌     | banana           | *Musa x paradisiaca*     |
 | Carrot          | 🥕     | carrot           | *Daucus carota*          |
 | Cherry          | 🍒     | cherries         | *Prunus avium*           |
 | Chestnut        | 🌰     | chestnut         | *Castanea dentata*       |
 | Chili Pepper    | 🌶️     | hot_pepper       | *Capsicum annuum*        |
 | Chocolate       | 🍫     | chocolate_bar    | *Theobroma cacao*        |
-| Clover          | ☘️     | shamrock         | *Trifolium*              |
+| Clover          | ☘️     | shamrock         | *Trifolium sp.*              |
 | Corn            | 🌽     | corn             | *Zea mays*               |
 | Cucumber        | 🥒     | cucumber         | *Cucumis sativus*        |
 | Daisy           | 🌼     | blossom          | *Bellis perennis*        |
 | Eggplant        | 🍆     | eggplant         | *Solanum melongena*      |
-| Fern            | 🌿     | herb             | *Mickelia*               |
+| Fern            | 🌿     | herb             | *Mickelia sp.*               |
 | Grapes          | 🍇     | grapes           | *Vitis vinifera*         |
 | Hibiscus        | 🌺     | hibiscus         | *Hibiscus rosa-sinensis* |
 | Japanese Cherry | 🌸     | cherry_blossom   | *Prunus x yedoensis*     |
 | Kiwi            | 🥝     | kiwi_fruit       | *Actinidia deliciosa*    |
 | Lemon           | 🍋     | lemon            | *Citrus × limon*         |
-| Maple           | 🍁     | maple_leaf       | *Acer*                   |
+| Maple           | 🍁     | maple_leaf       | *Acer sp.*                   |
 | Melon           | 🍈     | melon            | *Cucumis melo*           |
 | Olive           | 🍸️     | cocktail         | *Olea europaea*          |
 | Palm            | 🌴     | palm_tree        | *Cocos nucifera*         |
 | Peach           | 🍑     | peach            | *Prunus persica*         |
 | Peanuts         | 🥜     | peanuts          | *Arachis hypogaea*       |
 | Pear            | 🍐     | pear             | *Pyrus malus*            |
-| Pine            | 🌲     | evergreen_tree   | *Pinus*                  |
+| Pine            | 🌲     | evergreen_tree   | *Pinus sp.*                  |
 | Pineapple       | 🍍     | pineapple        | *Ananas comosus*         |
 | Potato          | 🥔     | potato           | *Solanum tuberosum*      |
 | Pumpkin         | 🎃     | jack_o_lantern   | *Cucurbita maxima*       |
 | Rice            | 🌾     | ear_of_rice      | *Oryza sativa*           |
-| Rose            | 🌹     | rose             | *Rosa*                   |
+| Rose            | 🌹     | rose             | *Rosa sp*                   |
 | Saguaro         | 🌵     | cactus           | *Carnegiea gigantea*     |
 | Strawberry      | 🍓     | strawberry       | *Fragaria vesca*         |
 | Sunflower       | 🌻     | sunflower        | *Helianthus annuus*      |
@@ -44,8 +44,8 @@ The plant phylomoji dataset features the following plant species:
 | Tangerine       | 🍊     | tangerine        | *Citrus reticulata*      |
 | Tobacco         | 🚬     | smoking          | *Nicotiana tabacum*      |
 | Tomato          | 🍅     | tomato           | *Solanum lycopersicum*   |
-| Tulip           | 🌷     | tulip            | *Tulipa*                 |
-| Water Clover    | 🍀     | four_leaf_clover | *Marsilea*               |
+| Tulip           | 🌷     | tulip            | *Tulipa sp.*                 |
+| Water Clover    | 🍀     | four_leaf_clover | *Marsilea sp.*               |
 | Watermelon      | 🍉     | watermelon       | *Citrullus lanatus*      |
 
 
@@ -66,7 +66,7 @@ This dataset includes emojis of plant byproducts, and other emojis with an uncle
 
 ![](./images/complete_r_plant_phylomoji.png) 
 
-Additional examples:
+## Additional examples:
 
 
 # Angiosperms only
