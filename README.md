@@ -6,7 +6,7 @@
  
   
   <p align="center">  
-<img width="600" height="600" src="./images/plantphylomoji.png">
+<img width="600" height="700" src="./images/plantphylomoji.png">
 </p>
 
    [Plant Phylomoji Dataset](./Dataset.md)
