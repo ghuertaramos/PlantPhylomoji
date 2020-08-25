@@ -1,26 +1,30 @@
-# GitHub Repository for the Phylogeny of Plant Emojis
+# #PlantPhylomoji : A phylogenetic tree of plant emojis
 
- This repository features a dataset and scripts to produce a phylogeny of plants represented by ideograms.
+ This github repository features a dataset and scripts to produce a phylogeny of plants represented by ideograms.
   
   The general objective of this project is to provide a resource for teachers, students, and researchers interested in phylogenetic trees and plant evolution.
  
   
   <p align="center">
   
-![](./data/StrictPhylomoji.png) 
+![](./images/complete_plant_phylomoji.png) 
 
 </p>
 
    [Plant Phylomoji Dataset](./Dataset.md)
+   
    Information about the dataset, subsets, references.
 
    [Plant Phylomoji R Script](./PlantPhylomoji.R)
+   
    Script to reproduce PlantPhylomoji tree and alternative datasets using R.
    
   [Plant Phylomoji on Jupyter](./PlantPhylomoji.ipynb)
+  
   Script to reproduce PlantPhylomoji tree and alternative datasets using R & Jupyter notebook.
 
    [Plant Phylomoji Development Log](./PlantPhylomojiLog.md)
+   
    Log and future ideas for this repo
  
  WORK IN PROGRESS

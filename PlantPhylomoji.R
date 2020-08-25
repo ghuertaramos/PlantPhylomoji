@@ -10,14 +10,17 @@ library(ggplot2)
 library(ggtree)
 library(emojifont)
 
-# load datasets
-load("./data/datasets.RData")
-
 ## datasets
 
-# you can edit the previously loaded datasets by uncommenting and modifying the following
+# load datasets from a R Data File
+load("./data/datasets.RData")
+
+# You may go ahead to the plotting step. 
+# Notice you could also edit the previously loaded datasets by uncommenting and modifying the following lines
 
 ## strict datasets (only plants, clear species ID)
+
+#solanales <- "( sweet_potato, ( hot_pepper, ( eggplant, ( potato, tomato))));"
 
 #monocots <- "( tulip, ( palm_tree, ( banana, ( pineapple, ( corn, ( tanabata_tree, ear_of_rice ))))));"
 
@@ -31,6 +34,8 @@ load("./data/datasets.RData")
 
 ## relaxed datasets (plant byproducts, debatable species ID)
 
+#solanales_r <- "( sweet_potato, ( smoking,( hot_pepper, ( eggplant, ( potato, tomato)))));"
+
 #monocots_r <- "( tulip, ( palm_tree, ( banana, ( pineapple, ( corn, ( tanabata_tree, ear_of_rice ))))));"
 
 #superasterids_r <- "( cactus, ( kiwi_fruit,(( cocktail, ( sweet_potato, ( hot_pepper, ( eggplant, ( potato, tomato))))), ( carrot,( sunflower, blossom)))));"
@@ -41,26 +46,35 @@ load("./data/datasets.RData")
 
 #complete_r <- "(( herb, four_leaf_clover),( evergreen_tree,( avocado,(( tulip, ( palm_tree, ( banana, ( pineapple, ( corn, ( tanabata_tree, ear_of_rice )))))),(( grapes, ((( peanuts, shamrock), ((( rose, strawberry ), (( apple, pear ), ( peach, ( cherry_blossom, cherries) ))), ( chestnut, ( jack_o_lantern, ( watermelon, ( cucumber, melon)))))), (( hibiscus, chocolate_bar), (( tangerine, lemon ), (maple_leaf))))),( cactus, ( kiwi_fruit,(( cocktail, ( sweet_potato, ( smoking,( hot_pepper, ( eggplant, ( potato, tomato)))))), ( carrot,( sunflower, blossom))))))))));"
 
+phylomoji<- read.tree(text=complete) # "text=" name of the dataset you want
 
-# "text=" name of the dataset you want
-
-x <- read.tree(text=complete)
-
-ggtree(x, layout="circular") +
+ggtree(phylomoji, layout="circular") +
   geom_tiplab(aes(color=label), parse='emoji', size=6, vjust=0.5, hjust = 0.5, offset = 0.9) +
-  labs(title="plant phylomoji", caption="powered by ggtree + emojifont")
+  labs(title="#PlantPhylomoji", caption="powered by ggtree + emojifont")
 
 # Example of complete_relaxed dataset
 
-x <- read.tree(text=complete_r)
+phylomoji <- read.tree(text=complete_r)
 
-ggtree(dataset, layout="circular") +
+ggtree(phylomoji, layout="circular") +
   geom_tiplab(aes(color=label), parse='emoji', size=6, vjust=0.5, hjust = 0.5, offset = 0.9) +
-  labs(title="plant phylomoji (Relaxed Dataset)", caption="powered by ggtree + emojifont")
+  labs(title="#PlantPhylomoji (Relaxed Dataset)", caption="powered by ggtree + emojifont")
 
 # Example of subset "superrosids"
-dataset <- read.tree(text=superrosids)
+phylomoji<- read.tree(text=superrosids)
 
-ggtree(dataset, layout="circular") +
+ggtree(phylomoji, layout="circular") +
   geom_tiplab(aes(color=label), parse='emoji', size=6, vjust=0.5, hjust = 0.5, offset = 0.9) +
-  labs(title="plant phylomoji (Superrosids)", caption="powered by ggtree + emojifont")
+  labs(title="#PlantPhylomoji (Superrosids)", caption="powered by ggtree + emojifont")
+
+# # Save plot to file
+# ggsave( "name.png",
+#   plot = last_plot(),
+#   device = NULL,
+#   path = "./images",
+#   scale = 1,
+#   width = 5.08,
+#   height = 4.06,
+#   units = "cm",
+#   dpi = 300,
+#   limitsize = TRUE,)
