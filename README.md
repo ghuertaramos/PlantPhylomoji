@@ -6,7 +6,9 @@
  
   
   <p align="center">
+  
 ![](./images/plantphylomoji.png) 
+
 </p>
 
    [Plant Phylomoji Dataset](./Dataset.md)
