@@ -1,5 +1,11 @@
 # PlantPhylomoji : A phylogenetic tree of plant emojis
 
+
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4001146.svg)](https://doi.org/10.5281/zenodo.4001146)
+
+
+
  This github repository features a dataset and scripts to produce a phylogeny of plants represented by ideograms.
   
   The general objective of this project is to provide a resource for teachers, students, and researchers interested in phylogenetic trees and plant evolution.
