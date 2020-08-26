@@ -48,10 +48,11 @@ The plant phylomoji dataset features the following plant species:
 | Water Clover    | 🍀     | four_leaf_clover | *Marsilea sp.*               |
 | Watermelon      | 🍉     | watermelon       | *Citrullus lanatus*      |
 
+Download dataset as csv:
 
 # Complete Strict 
 
-This is the original dataset. The parenthetical phylogeny includes Mangoes and Lettuce but they aren't rendered in ggtree.
+This is the original dataset. The parenthetical phylogeny includes Mangoes and Lettuce.
 
 ( 🌲,( 🥑,(( 🌷, ( 🌴, ( 🍌, ( 🍍, ( 🌽, ( 🎋, 🌾 )))))),(( 🍇, ((( 🥜, ☘️), ((( 🌹, 🍓 ), (( 🍎, 🍐 ), ( 🍑, (🌸, 🍒) ))), ( 🌰, ( 🎃, ( 🍉, ( 🥒, 🍈)))))), (( 🌺, 🥦 ), (( 🍊, 🍋 ), ( 🍁, 🥭))))),( 🌵, ( 🥝, (( 🍠, ( 🌶️, (🍆, ( 🥔, 🍅)))), ( 🥕,( 🥬, ( 🌻, 🌼)))))))))
 
@@ -65,6 +66,16 @@ This dataset includes emojis of plant byproducts, and other emojis with an uncle
 (( 🌿, 🍀),( 🌲,( 🥑,(( 🌷, ( 🌴, ( 🍌, ( 🍍, ( 🌽, ( 🎋, 🌾 )))))),(( 🍇, ((( 🥜, ☘️), ((( 🌹, 🍓 ), (( 🍎, 🍐 ), ( 🍑, ( 🌸, 🍒) ))), ( 🌰, ( 🎃, ( 🍉, ( 🥒, 🍈)))))), ((🥦, ( 🌺, 🍫)), (( 🍊, 🍋 ), (🍁,🥭))))),( 🌵, ( 🥝,(( 🍸️, ( 🍠, ( 🚬,( 🌶️, ( 🍆, ( 🥔, 🍅)))))), ( 🥕,( 🥬, ( 🌻, 🌼))))))))))
 
 ![](./images/complete_r_plant_phylomoji.png) 
+
+# Ultrametric
+
+![](./images/ultrametric_r.png)
+
+* *Mickelia* is missing from this set
+
+Download ultrametric tree file:
+
+Topology and edge lengths based on Qian & Jin 2016.
 
 ## Additional examples:
 
@@ -99,10 +110,14 @@ This dataset includes emojis of plant byproducts, and other emojis with an uncle
 
 ![](./images/solanales.png) 
 
+Download subsets as text:
+
  References: 
  Chase, M. W., Christenhusz, M. J. M., Fay, M. F., Byng, J. W., Judd, W. S., Soltis, D. E., ... & Stevens, P. F. (2016). An update of the Angiosperm Phylogeny Group classification for the orders and families of flowering plants: APG IV. Botanical Journal of the Linnean Society, 181(1), 1-20.
  
  Kocyan, A., Zhang, L. B., Schaefer, H., & Renner, S. S. (2007). A multi-locus chloroplast phylogeny for the Cucurbitaceae and its implications for character evolution and classification. Molecular phylogenetics and evolution, 44(2), 553-577.
+ 
+ Qian, H., & Jin, Y. (2016). An updated megaphylogeny of plants, a tool for generating plant phylogenies and an analysis of phylogenetic community structure. Journal of Plant Ecology, 9(2), 233-239.
  
  Särkinen, T., Bohs, L., Olmstead, R.G. et al. A phylogenetic framework for evolutionary study of the nightshades (Solanaceae): a dated 1000-tip tree. BMC Evol Biol 13, 214 (2013). https://doi.org/10.1186/1471-2148-13-214.
  

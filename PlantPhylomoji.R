@@ -1,5 +1,6 @@
 #Load Libraries
 library(ggplot2)
+library(ape)
 
 #ggtree and emojifont can be installed from bioconductor
 #if (!requireNamespace("BiocManager", quietly = TRUE))
@@ -15,8 +16,7 @@ library(emojifont)
 # load datasets from a R Data File
 load("./data/datasets.RData")
 
-# You may go ahead to the plotting step. 
-# Notice you could also edit the previously loaded datasets by uncommenting and modifying the following lines
+# You may go to the plotting step or you could also edit the previously loaded datasets by uncommenting and modifying the following lines
 
 ## strict datasets (only plants, clear species ID)
 
@@ -59,6 +59,13 @@ phylomoji <- read.tree(text=complete_r)
 ggtree(phylomoji, layout="circular") +
   geom_tiplab(aes(color=label), parse='emoji', size=6, vjust=0.5, hjust = 0.5, offset = 0.9) +
   labs(title="#PlantPhylomoji (Relaxed Dataset)", caption="powered by ggtree + emojifont")
+
+# Example of ultrametric_relaxed dataset
+# ultrametric_r <- read.tree("./data/pp_ultrametric.tree")
+
+ggtree(ultrametric_r, layout="circular") +
+  geom_tiplab(aes(color=label), parse='emoji',size=6, vjust=0.5, hjust = 0.5, offset = 33) +
+  labs(title="#PlantPhylomoji (Ultrametric)", caption="powered by ggtree + emojifont")
 
 # Example of subset "superrosids"
 phylomoji<- read.tree(text=superrosids)
