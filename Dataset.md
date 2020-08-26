@@ -1,4 +1,4 @@
-# PlantPhylomoji Dataset
+# PlantPhylomoji Datasets
 
 The plant phylomoji dataset features the following plant species and character information: 
 
@@ -52,24 +52,24 @@ The plant phylomoji dataset features the following plant species and character i
 
 Download dataset as csv: [plantphylomoji.csv](https://raw.githubusercontent.com/ghuertaramos/PlantPhylomoji/master/data/plantphylomoji.csv) 
 
-# Complete Strict 
+# Complete Strict tree
 
-This is the original dataset. The parenthetical phylogeny includes Mangoes and Lettuce.
+This is the original tree. The parenthetical phylogeny includes Mangoes and Lettuce.
 
 ( 🌲,( 🥑,(( 🌷, ( 🌴, ( 🍌, ( 🍍, ( 🌽, ( 🎋, 🌾 )))))),(( 🍇, ((( 🥜, ☘️), ((( 🌹, 🍓 ), (( 🍎, 🍐 ), ( 🍑, (🌸, 🍒) ))), ( 🌰, ( 🎃, ( 🍉, ( 🥒, 🍈)))))), (( 🌺, 🥦 ), (( 🍊, 🍋 ), ( 🍁, 🥭))))),( 🌵, ( 🥝, (( 🍠, ( 🌶️, (🍆, ( 🥔, 🍅)))), ( 🥕,( 🥬, ( 🌻, 🌼)))))))))
 
 ![](./images/complete_plant_phylomoji.png) 
 
-# Complete Relaxed
+# Complete Relaxed tree
 
-This dataset includes emojis of plant byproducts, and other emojis with an unclear ID. 
+This tree includes emojis of plant byproducts, and other emojis with an unclear ID. 
 🍀= *Marsilea*,  🍫 = *Theobroma* and  🚬 = *Nicotiana*
 
 (( 🌿, 🍀),( 🌲,( 🥑,(( 🌷, ( 🌴, ( 🍌, ( 🍍, ( 🌽, ( 🎋, 🌾 )))))),(( 🍇, ((( 🥜, ☘️), ((( 🌹, 🍓 ), (( 🍎, 🍐 ), ( 🍑, ( 🌸, 🍒) ))), ( 🌰, ( 🎃, ( 🍉, ( 🥒, 🍈)))))), ((🥦, ( 🌺, 🍫)), (( 🍊, 🍋 ), (🍁,🥭))))),( 🌵, ( 🥝,(( 🍸️, ( 🍠, ( 🚬,( 🌶️, ( 🍆, ( 🥔, 🍅)))))), ( 🥕,( 🥬, ( 🌻, 🌼))))))))))
 
 ![](./images/complete_r_plant_phylomoji.png) 
 
-# Ultrametric
+# Ultrametric tree
 
 ![](./images/ultrametric_r.png)
 
@@ -82,37 +82,37 @@ Topology and edge lengths based on Qian & Jin 2016.
 ## Additional examples:
 
 
-# Angiosperms only
+# Angiosperms only tree
 
 ( 🥑,(( 🌷, ( 🌴, ( 🍌, ( 🍍, ( 🌽, ( 🎋, 🌾 )))))),(( 🍇, ((( 🥜, ☘️), ((( 🌹, 🍓 ), (( 🍎, 🍐 ), ( 🍑, (🌸, 🍒) ))), ( 🌰, ( 🎃, ( 🍉, ( 🥒, 🍈)))))), (( 🌺, 🥦 ), (( 🍊, 🍋 ), ( 🍁, 🥭))))),( 🌵, ( 🥝, (( 🍠, ( 🌶️, (🍆, ( 🥔, 🍅)))), ( 🥕,( 🥬, ( 🌻, 🌼)))))))) 
 
 ![](./images/angiosperms.png) 
 
-# Monocots
+# Monocots tree
 
 ( 🌷, ( 🌴, ( 🍌, ( 🍍, ( 🌽, ( 🎋, 🌾 )))))) 
 
 ![](./images/monocots.png) 
 
-# Superasterids
+# Superasterids tree
 
 ( 🌵, ( 🥝, (( 🍠, ( 🌶️, ( 🍆, ( 🥔, 🍅)))), ( 🥕,( 🌻, 🌼))))) 
 
 ![](./images/superasterids.png) 
 
-# Superrosids
+# Superrosids tree
 
 ( 🍇, ((( 🥜, ☘️), ((( 🌹, 🍓 ), (( 🍎, 🍐 ), ( 🍑, ( 🌸, 🍒) ))), ( 🌰, ( 🎃, ( 🍉, ( 🥒, 🍈)))))), (( 🌺, 🥦 ), (( 🍊, 🍋 ), ( 🍁,🥭 )))))
 
 ![](./images/superrosids.png) 
 
-# Solanales
+# Solanales tree
 
 ( 🍠, ( 🌶️, ( 🍆, ( 🥔, 🍅)))))
 
 ![](./images/solanales.png) 
 
-Download subsets as text: [datasets.txt](https://raw.githubusercontent.com/ghuertaramos/PlantPhylomoji/master/data/datasets.txt) 
+Download subtrees as text: [datasets.txt](https://raw.githubusercontent.com/ghuertaramos/PlantPhylomoji/master/data/datasets.txt) 
 
  References: 
  Chase, M. W., Christenhusz, M. J. M., Fay, M. F., Byng, J. W., Judd, W. S., Soltis, D. E., ... & Stevens, P. F. (2016). An update of the Angiosperm Phylogeny Group classification for the orders and families of flowering plants: APG IV. Botanical Journal of the Linnean Society, 181(1), 1-20.

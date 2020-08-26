@@ -17,7 +17,7 @@
 
    [PlantPhylomoji Dataset](./Dataset.md)
    
-   Information about the datasets, subsets, downloads & references.
+   Information about the datasets, trees, downloads & references.
 
    [PlantPhylomoji R Script](./PlantPhylomoji.R)
    
