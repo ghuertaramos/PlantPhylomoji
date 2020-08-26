@@ -17,15 +17,15 @@
 
    [PlantPhylomoji Dataset](./Dataset.md)
    
-   Information about the dataset, subsets, references.
+   Information about the datasets, subsets, downloads & references.
 
    [PlantPhylomoji R Script](./PlantPhylomoji.R)
    
-   Script to reproduce PlantPhylomoji tree and alternative datasets using R.
+   Script to plot PlantPhylomoji trees using R.
    
   [PlantPhylomoji on Jupyter](./PlantPhylomoji.ipynb)
   
-  Script to reproduce PlantPhylomoji tree and alternative datasets using R & Jupyter notebook.
+  Script to plot PlantPhylomoji tree using R & Jupyter notebook.
 
    [PlantPhylomoji Development Log](./PlantPhylomojiLog.md)
    
