@@ -15,21 +15,19 @@
 <img width="600" height="700" src="./images/plantphylomoji.png">
 </p>
 
+   [PlantPhylomoji R Script](./PlantPhylomoji.R)   
+   Script to plot PlantPhylomoji trees using R.
+
    [PlantPhylomoji Dataset](./Dataset.md)   
    Information about the datasets, trees, downloads & references.
 
-   [PlantPhylomoji R Script](./PlantPhylomoji.R)   
-   Script to plot PlantPhylomoji trees using R.
-   
-  [PlantPhylomoji on Jupyter](./PlantPhylomoji.ipynb)  
-  Script to plot PlantPhylomoji trees using R & Jupyter notebook.
+   [PlantPhylomoji tutorial on Jupyter](./PlantPhylomoji.ipynb)  
+  Tutorial to plot PlantPhylomoji trees using R & Jupyter.
+   WORK IN PROGRESS
 
    [PlantPhylomoji Development Log](./PlantPhylomojiLog.md)   
    Log and future ideas for this repo
  
- WORK IN PROGRESS
- 
  Featured in : 
- Escudero, M., & Wendel, J. F. The grand sweep of chromosomal evolution in angiosperms. New Phytologist.
- doi: [10.1111/nph.16668.](https://nph.onlinelibrary.wiley.com/doi/abs/10.1111/nph.16802)
+ Escudero, M., & Wendel, J. F. The grand sweep of chromosomal evolution in angiosperms. New Phytologist.  doi: [10.1111/nph.16668.](https://nph.onlinelibrary.wiley.com/doi/abs/10.1111/nph.16802)
   

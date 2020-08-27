@@ -75,12 +75,12 @@ This tree includes emojis of plant byproducts, and other emojis with an unclear 
 
 ![](./images/ultrametric.png)
 
-Topology and edge lengths based on Phylomaker (Jin & Qian 2019)
-See: [phylomoji_phylomaker.R](https://raw.githubusercontent.com/ghuertaramos/PlantPhylomoji/master/phylomoji_phylomaker.R)
-
 Download ultrametric tree file:[plantphylomoji_ultrametric.tree](https://raw.githubusercontent.com/ghuertaramos/PlantPhylomoji/master/data/plantphylomoji_ultrametric.tree) 
 
 * *Mickelia sp* and *Musa x paradisiaca* are missing from this set
+
+Topology and edge lengths based on Phylomaker (Jin & Qian 2019)
+See: [phylomoji_phylomaker.R](https://raw.githubusercontent.com/ghuertaramos/PlantPhylomoji/master/data/phylomoji_phylomaker.R)
 
 # Additional trees include:
 

@@ -19,6 +19,9 @@ complete <-c("herb","four_leaf_clover","evergreen_tree","avocado","tulip","palm_
 complete.tree <- keep.tip (plantphylomoji.tree, complete)
 strict <-c("evergreen_tree","avocado","tulip","palm_tree","banana","pineapple","corn","tanabata_tree","ear_of_rice","grapes","peanuts","shamrock","rose","strawberry","apple","pear","peach","cherry_blossom","cherries","chestnut","jack_o_lantern","watermelon","cucumber","melon","hibiscus","tangerine","lemon","maple_leaf","cactus","kiwi_fruit","sweet_potato","hot_pepper","eggplant","potato","tomato","carrot","sunflower","blossom")
 strict.tree <- keep.tip (plantphylomoji.tree, strict)
+
+ultrametric.tree <- plantphylomoji.ul
+
 angiosperms <- c("avocado","tulip","palm_tree","banana","pineapple","corn","tanabata_tree","ear_of_rice","grapes","peanuts","shamrock","rose","strawberry","apple","pear","peach","cherry_blossom","cherries","chestnut","jack_o_lantern","watermelon","cucumber","melon","hibiscus","chocolate_bar","tangerine","lemon","maple_leaf","cactus","kiwi_fruit","cocktail","sweet_potato","smoking","hot_pepper","eggplant","potato","tomato","carrot","sunflower","blossom")
 angiosperms.tree <- keep.tip (plantphylomoji.tree, angiosperms)
 monocots <- c("tulip","palm_tree","banana","pineapple","corn","tanabata_tree","ear_of_rice")
