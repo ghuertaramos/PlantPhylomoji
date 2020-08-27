@@ -49,10 +49,12 @@ The plant phylomoji dataset features the following plant species and character i
 |Watermelon|🍉|watermelon|*Citrullus lanatus*|Cucurbitaceae |11|0.5|
 
  Haploid chromosome number (n) and Genome Size (gs) from Escudero & Wendel 2020.
+ 
+ I'm looking to populate this table with more data. If you have data to contribute, please send me an email.
 
-Download dataset as csv: [plantphylomoji.csv](https://raw.githubusercontent.com/ghuertaramos/PlantPhylomoji/master/data/plantphylomoji.csv) 
+Download dataset table: [plantphylomoji.csv](https://raw.githubusercontent.com/ghuertaramos/PlantPhylomoji/master/data/plantphylomoji.csv) 
 
-# Complete Strict tree
+## Strict tree
 
 This is the original tree. The parenthetical phylogeny includes Mangoes and Lettuce.
 
@@ -60,7 +62,7 @@ This is the original tree. The parenthetical phylogeny includes Mangoes and Lett
 
 ![](./images/complete_plant_phylomoji.png) 
 
-# Complete Relaxed tree
+## Complete tree
 
 This tree includes emojis of plant byproducts, and other emojis with an unclear ID. 
 🍀= *Marsilea*,  🍫 = *Theobroma* and  🚬 = *Nicotiana*
@@ -69,56 +71,41 @@ This tree includes emojis of plant byproducts, and other emojis with an unclear 
 
 ![](./images/complete_r_plant_phylomoji.png) 
 
-# Ultrametric tree
+## Ultrametric tree
 
-![](./images/ultrametric_r.png)
+![](./images/ultrametric.png)
 
-* *Mickelia* is missing from this set
+Download ultrametric tree file:[plantphylomoji_ultrametric.tree](https://raw.githubusercontent.com/ghuertaramos/PlantPhylomoji/master/data/plantphylomoji_ultrametric.tree) 
 
-Download ultrametric tree file:[pp_ultrametric.tree](https://raw.githubusercontent.com/ghuertaramos/PlantPhylomoji/master/data/pp_ultrametric.tree) 
+* *Mickelia sp* and *Musa x paradisiaca* are missing from this set
 
-Topology and edge lengths based on Qian & Jin 2016.
+Topology and edge lengths based on Phylomaker (Jin & Qian 2019)
+See: [phylomoji_phylomaker.R](https://raw.githubusercontent.com/ghuertaramos/PlantPhylomoji/master/data/phylomoji_phylomaker.R)
 
-## Additional examples:
+# Additional trees include:
 
 
-# Angiosperms only tree
+## Superasterids tree
 
-( 🥑,(( 🌷, ( 🌴, ( 🍌, ( 🍍, ( 🌽, ( 🎋, 🌾 )))))),(( 🍇, ((( 🥜, ☘️), ((( 🌹, 🍓 ), (( 🍎, 🍐 ), ( 🍑, (🌸, 🍒) ))), ( 🌰, ( 🎃, ( 🍉, ( 🥒, 🍈)))))), (( 🌺, 🥦 ), (( 🍊, 🍋 ), ( 🍁, 🥭))))),( 🌵, ( 🥝, (( 🍠, ( 🌶️, (🍆, ( 🥔, 🍅)))), ( 🥕,( 🥬, ( 🌻, 🌼)))))))) 
-
-![](./images/angiosperms.png) 
-
-# Monocots tree
-
-( 🌷, ( 🌴, ( 🍌, ( 🍍, ( 🌽, ( 🎋, 🌾 )))))) 
-
-![](./images/monocots.png) 
-
-# Superasterids tree
-
-( 🌵, ( 🥝, (( 🍠, ( 🌶️, ( 🍆, ( 🥔, 🍅)))), ( 🥕,( 🌻, 🌼))))) 
+( 🌵, ( 🥝, (( 🍠, ( 🌶️, ( 🍆, ( 🥔, 🍅)))), ( 🥕,( 🌻, 🌼)))))
 
 ![](./images/superasterids.png) 
 
-# Superrosids tree
-
-( 🍇, ((( 🥜, ☘️), ((( 🌹, 🍓 ), (( 🍎, 🍐 ), ( 🍑, ( 🌸, 🍒) ))), ( 🌰, ( 🎃, ( 🍉, ( 🥒, 🍈)))))), (( 🌺, 🥦 ), (( 🍊, 🍋 ), ( 🍁,🥭 )))))
-
-![](./images/superrosids.png) 
-
-# Solanales tree
+## Solanales tree
 
 ( 🍠, ( 🌶️, ( 🍆, ( 🥔, 🍅)))))
 
 ![](./images/solanales.png) 
 
-Download subtrees as text: [datasets.txt](https://raw.githubusercontent.com/ghuertaramos/PlantPhylomoji/master/data/datasets.txt) 
+See all the additional trees at: [plantphylomoji_vectors.txt](https://raw.githubusercontent.com/ghuertaramos/PlantPhylomoji/master/data/plantphylomoji_vectors.txt) 
 
 # References:
  
  Chase, M. W., Christenhusz, M. J. M., Fay, M. F., Byng, J. W., Judd, W. S., Soltis, D. E., ... & Stevens, P. F. (2016). An update of the Angiosperm Phylogeny Group classification for the orders and families of flowering plants: APG IV. Botanical Journal of the Linnean Society, 181(1), 1-20.
  
  Escudero, M., & Wendel, J. F. The grand sweep of chromosomal evolution in angiosperms. New Phytologist. doi: 10.1111/nph.16668.
+ 
+ Jin, Y., & Qian, H. (2019). V. PhyloMaker: an R package that can generate very large phylogenies for vascular plants. Ecography, 42(8), 1353-1359.
  
  Kocyan, A., Zhang, L. B., Schaefer, H., & Renner, S. S. (2007). A multi-locus chloroplast phylogeny for the Cucurbitaceae and its implications for character evolution and classification. Molecular phylogenetics and evolution, 44(2), 553-577.
  
@@ -131,5 +118,3 @@ Download subtrees as text: [datasets.txt](https://raw.githubusercontent.com/ghue
  Xiang, Y., Huang, C. H., Hu, Y., Wen, J., Li, S., Yi, T., ... & Ma, H. (2017). Evolution of Rosaceae fruit types based on nuclear phylogeny in the context of geological times and genome duplication. Molecular Biology and Evolution, 34(2), 262-281.
  
  Yu, Guangchuang, David Smith, Huachen Zhu, Yi Guan, and Tommy Tsan-Yuk Lam. 2017. “Ggtree: An R Package for Visualization and Annotation of Phylogenetic Trees with Their Covariates and Other Associated Data.” Methods in Ecology and Evolution 8 (1): 28–36. doi:10.1111⁄2041-210X.12628.
-
-

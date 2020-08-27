@@ -1,4 +1,5 @@
-#Load Libraries
+# Load Libraries ----------------------------------------------------------
+
 library(ggplot2)
 library(ape)
 
@@ -11,77 +12,59 @@ library(ape)
 library(ggtree)
 library(emojifont)
 
-## datasets
+# Datasets ----------------------------------------------------------------
 
-# load datasets from a R Data File
+## load datasets(trees and vectors) from a R Data File
 load("./data/datasets.RData")
 
-# You may go to the plotting step or you could also edit the previously loaded datasets by uncommenting and modifying the following lines
+## the following datasets are included:
 
-## strict datasets (only plants, clear species ID)
+# complete.tree
+# strict.tree
+# ultrametric.tree
+# angiosperms.tree
+# monocots.tree
+# superasterids.tree
+# superrosids.tree
+# solanales.tree
 
-#solanales <- "( sweet_potato, ( hot_pepper, ( eggplant, ( potato, tomato))));"
+# Making your own subtrees ------------------------------------------------
 
-#monocots <- "( tulip, ( palm_tree, ( banana, ( pineapple, ( corn, ( tanabata_tree, ear_of_rice ))))));"
+## Reload PlantPhylomoji complete tree if necessary
+# plantphylomoji.tree <- read.tree("./data/plantphylomoji.tree")
 
-#superasterids <- "( cactus, ( kiwi_fruit, (( sweet_potato, ( hot_pepper, ( eggplant, ( potato, tomato)))), ( carrot,( sunflower, blossom)))));"
+## There are two ways to prune the tree, you could specify tips to remove using a vector.
+# not_angiosperms <- c("four_leaf_clover", "evergreen_tree")
+# angiosperms.tree <- drop.tip(plant_phylomoji.tree, not_angiosperms)
 
-#superrosids <- "( grapes, ((( peanuts, shamrock), ((( rose, strawberry ), (( apple, pear ), ( peach, ( cherry_blossom, cherries) ))), ( chestnut, ( jack_o_lantern, ( watermelon, ( cucumber, melon)))))), (hibiscus, (( tangerine, lemon ), ( maple_leaf)))));"
+## Or you could specify a vector including only the tips you want in the tree.
+# strict <- c("evergreen_tree","avocado","tulip","palm_tree","banana","pineapple","corn","tanabata_tree","ear_of_rice","grapes","peanuts","shamrock","rose","strawberry","apple","pear","peach","cherry_blossom","cherries","chestnut","jack_o_lantern","watermelon","cucumber","melon","hibiscus","tangerine","lemon","maple_leaf","cactus","kiwi_fruit","sweet_potato","hot_pepper","eggplant","potato","tomato","carrot","sunflower","blossom")
+# strict.tree <- keep.tip (plant_phylomoji.tree, strict)
 
-#angiosperms <- "( avocado,(( tulip, ( palm_tree, ( banana, ( pineapple, ( corn, ( tanabata_tree, ear_of_rice )))))),(( grapes, ((( peanuts, shamrock), ((( rose, strawberry ), (( apple, pear ), ( peach, (cherry_blossom, cherries) ))), ( chestnut, ( jack_o_lantern, ( watermelon, ( cucumber, melon)))))), ( hibiscus, (( tangerine, lemon ), ( maple_leaf))))),( cactus, ( kiwi_fruit, (( sweet_potato, ( hot_pepper, (eggplant, ( potato, tomato)))), ( carrot,( sunflower, blossom))))))));"
+# PlantPhylomoji example plots -----------------------------------------------
 
-#complete <- "( evergreen_tree,( avocado,(( tulip, ( palm_tree, ( banana, ( pineapple, ( corn, ( tanabata_tree, ear_of_rice )))))),(( grapes, ((( peanuts, shamrock), ((( rose, strawberry ), (( apple, pear ), ( peach, (cherry_blossom, cherries) ))), ( chestnut, ( jack_o_lantern, ( watermelon, ( cucumber, melon)))))), ( hibiscus, (( tangerine, lemon ), ( maple_leaf))))),( cactus, ( kiwi_fruit, (( sweet_potato, ( hot_pepper, (eggplant, ( potato, tomato)))), ( carrot,( sunflower, blossom)))))))));"
-
-## relaxed datasets (plant byproducts, debatable species ID)
-
-#solanales_r <- "( sweet_potato, ( smoking,( hot_pepper, ( eggplant, ( potato, tomato)))));"
-
-#monocots_r <- "( tulip, ( palm_tree, ( banana, ( pineapple, ( corn, ( tanabata_tree, ear_of_rice ))))));"
-
-#superasterids_r <- "( cactus, ( kiwi_fruit,(( cocktail, ( sweet_potato, ( hot_pepper, ( eggplant, ( potato, tomato))))), ( carrot,( sunflower, blossom)))));"
-
-#superrosids_r <- "(( grapes, ((( peanuts, shamrock), ((( rose, strawberry ), (( apple, pear ), ( peach, ( cherry_blossom, cherries) ))), ( chestnut, ( jack_o_lantern, ( watermelon, ( cucumber, melon)))))), (( hibiscus, chocolate_bar), (( tangerine, lemon ), ( maple_leaf))))));"
-
-#angiosperms_r <- "( avocado,(( tulip, ( palm_tree, ( banana, ( pineapple, (corn, ( tanabata_tree, ear_of_rice )))))),(( grapes, ((( peanuts, shamrock), ((( rose, strawberry ), ((apple, pear ), ( peach, (cherry_blossom, cherries) ))), ( chestnut, ( jack_o_lantern, ( watermelon, ( cucumber, melon)))))), (( hibiscus, chocolate_bar), (( tangerine, lemon ), ( maple_leaf))))),( cactus, ( kiwi_fruit,(( cocktail, (sweet_potato, ( smoking,( hot_pepper, ( eggplant, ( potato, tomato)))))), ( carrot,( sunflower, blossom))))))));"
-
-#complete_r <- "(( herb, four_leaf_clover),( evergreen_tree,( avocado,(( tulip, ( palm_tree, ( banana, ( pineapple, ( corn, ( tanabata_tree, ear_of_rice )))))),(( grapes, ((( peanuts, shamrock), ((( rose, strawberry ), (( apple, pear ), ( peach, ( cherry_blossom, cherries) ))), ( chestnut, ( jack_o_lantern, ( watermelon, ( cucumber, melon)))))), (( hibiscus, chocolate_bar), (( tangerine, lemon ), (maple_leaf))))),( cactus, ( kiwi_fruit,(( cocktail, ( sweet_potato, ( smoking,( hot_pepper, ( eggplant, ( potato, tomato)))))), ( carrot,( sunflower, blossom))))))))));"
-
-phylomoji<- read.tree(text=complete) # "text=" name of the dataset you want
-
-ggtree(phylomoji, layout="circular") +
+## #PlantPhylomoji The complete dataset (42 Emojis)
+ggtree(plantphylomoji.tree, layout="circular") +
   geom_tiplab(aes(color=label), parse='emoji', size=6, vjust=0.5, hjust = 0.5, offset = 0.9) +
   labs(title="#PlantPhylomoji", caption="powered by ggtree + emojifont")
 
-# Example of complete_relaxed dataset
-
-phylomoji <- read.tree(text=complete_r)
-
-ggtree(phylomoji, layout="circular") +
+## #PlantPhylomoji Strict dataset (38 Emojis)
+ggtree(strict.tree, layout="circular") +
   geom_tiplab(aes(color=label), parse='emoji', size=6, vjust=0.5, hjust = 0.5, offset = 0.9) +
-  labs(title="#PlantPhylomoji (Relaxed Dataset)", caption="powered by ggtree + emojifont")
+  labs(title="#PlantPhylomoji (Strict Dataset)", caption="powered by ggtree + emojifont")
 
-# Example of ultrametric_relaxed dataset
-# ultrametric_r <- read.tree("./data/pp_ultrametric.tree")
-
-ggtree(ultrametric_r, layout="circular") +
-  geom_tiplab(aes(color=label), parse='emoji',size=6, vjust=0.5, hjust = 0.5, offset = 33) +
+## #PlantPhylomoji Ultrametric tree (38 Emojis)
+ggtree(plantphylomoji.ul, layout="circular") +
+  geom_tiplab(aes(color=label), parse='emoji',size=6, vjust=0.5, hjust = 0.5, offset = 28) +
   labs(title="#PlantPhylomoji (Ultrametric)", caption="powered by ggtree + emojifont")
 
-# Example of subset "superrosids"
-phylomoji<- read.tree(text=superrosids)
-
-ggtree(phylomoji, layout="circular") +
+## #PlantPhylomoji Superasterids (40 Emojis)
+ggtree(superasterids.tree, layout="circular") +
   geom_tiplab(aes(color=label), parse='emoji', size=6, vjust=0.5, hjust = 0.5, offset = 0.9) +
-  labs(title="#PlantPhylomoji (Superrosids)", caption="powered by ggtree + emojifont")
+  labs(title="#PlantPhylomoji (Superasterids)", caption="powered by ggtree + emojifont")
 
-# # Save plot to file
-# ggsave( "name.png",
-#   plot = last_plot(),
-#   device = NULL,
-#   path = "./images",
-#   scale = 1,
-#   width = 5.08,
-#   height = 4.06,
-#   units = "cm",
-#   dpi = 300,
-#   limitsize = TRUE,)
+## #PlantPhylomoji Solanales (6 Emojis)
+ggtree(solanales.tree, layout="circular") +
+  geom_tiplab(aes(color=label), parse='emoji', size=6, vjust=0.5, hjust = 0.5, offset = 0.9) +
+  labs(title="#PlantPhylomoji (Solanales)", caption="powered by ggtree + emojifont")
+

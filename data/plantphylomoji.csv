@@ -1,37 +1,37 @@
 Name ,Emoji,Emoji_text_code ,Species,Family,n,gs
 Apple,🍎,apple,Malus domestica,Rosaceae ,17,0.75
 Avocado,🥑,avocado,Persea americana,Lauraceae ,12,0.92
-Bamboo,🎋,tanabata_tree,Phyllostachys sp.,Poaceae ,24,2.4
-Banana,🍌,banana,Musa x paradisiaca,Musaceae ,11,0.68
+Bamboo,🎋,tanabata_tree,Phyllostachys bambusoides,Poaceae ,24,2.4
+Banana,🍌,banana,Musa acuminata,Musaceae ,11,0.68
 Carrot,🥕,carrot,Daucus carota,Apiaceae ,9,0.47
 Cherry,🍒,cherries,Prunus avium,Rosaceae ,8,0.43
 Chestnut,🌰,chestnut,Castanea dentata,Fagaceae ,12,0.98
 Chili Pepper,🌶️,hot_pepper,Capsicum annuum,Solanaceae ,12,3.16
 Chocolate,🍫,chocolate_bar,Theobroma cacao,Malvaceae ,10,0.4
-Clover,☘️,shamrock,Trifolium sp.,Fabaceae ,14,0.73
+Clover,☘️,shamrock,Trifolium repens,Fabaceae ,14,0.73
 Corn,🌽,corn,Zea mays,Poaceae ,10,2.7
 Cucumber,🥒,cucumber,Cucumis sativus,Cucurbitaceae ,7,0.9
 Daisy,🌼,blossom,Bellis perennis,Asteraceae ,9,1.58
 Eggplant,🍆,eggplant,Solanum melongena,Solanaceae ,12,1
-Fern,🌿,herb,Mickelia sp.,Dryopteridaceae ,NA ,NA 
+Fern,🌿,herb,Mickelia nicotianifolia,Dryopteridaceae ,NA ,NA 
 Grapes,🍇,grapes,Vitis vinifera,Vitaceae ,19,0.4
 Hibiscus,🌺,hibiscus,Hibiscus rosa-sinensis,Malvaceae ,40,2.37
-Japanese Cherry,🌸,cherry_blossom,Prunus x yedoensis,Rosaceae ,16,0.55
+Japanese Cherry,🌸,cherry_blossom,Prunus serrulata,Rosaceae ,16,0.55
 Kiwi,🥝,kiwi_fruit,Actinidia deliciosa,Actinidiaceae ,87,2.2
-Lemon,🍋,lemon,Citrus × limon,Rutaceae ,9,0.4
-Maple,🍁,maple_leaf,Acer sp.,Sapindaceae ,13,0.71
+Lemon,🍋,lemon,Citrus limon,Rutaceae ,9,0.4
+Maple,🍁,maple_leaf,Acer saccharum,Sapindaceae ,13,0.71
 Melon,🍈,melon,Cucumis melo,Cucurbitaceae ,12,1
 Olive,🍸️,cocktail,Olea europaea,Oleaceae ,23,1.95
 Palm,🌴,palm_tree,Cocos nucifera,Arecaceae ,16,2.8
 Peach,🍑,peach,Prunus persica,Rosaceae ,8,0.3
 Peanuts,🥜,peanuts,Arachis hypogaea,Fabaceae ,20,2.87
 Pear,🍐,pear,Pyrus malus,Rosaceae ,17,0.62
-Pine,🌲,evergreen_tree,Pinus sp.,Pinaceae ,NA ,NA 
+Pine,🌲,evergreen_tree,Pinus strobus,Pinaceae ,NA ,NA 
 Pineapple,🍍,pineapple,Ananas comosus,Bromeliaceae ,25,0.55
 Potato,🥔,potato,Solanum tuberosum,Solanaceae ,24,0.89
 Pumpkin,🎃,jack_o_lantern,Cucurbita maxima,Cucurbitaceae ,20,0.46
 Rice,🌾,ear_of_rice,Oryza sativa,Poaceae ,12,0.5
-Rose,🌹,rose,Rosa sp,Rosaceae ,7,0.76
+Rose,🌹,rose,Rosa chinensis,Rosaceae ,7,0.76
 Saguaro,🌵,cactus,Carnegiea gigantea,Cactaceae ,11,1.44
 Strawberry,🍓,strawberry,Fragaria vesca,Rosaceae ,7,0.25
 Sunflower,🌻,sunflower,Helianthus annuus,Asteraceae ,17,3.67
@@ -39,6 +39,6 @@ Sweet potato,🍠,sweet_potato,Ipomoea batatas,Convolvulaceae ,45,2.3
 Tangerine,🍊,tangerine,Citrus reticulata,Rutaceae ,9,0.47
 Tobacco,🚬,smoking,Nicotiana tabacum,Solanaceae ,24,5.18
 Tomato,🍅,tomato,Solanum lycopersicum,Solanaceae ,12,1.06
-Tulip,🌷,tulip,Tulipa sp.,Liliaceae ,12,15.13
-Water Clover,🍀,four_leaf_clover,Marsilea sp.,Marsileaceae ,NA ,NA 
+Tulip,🌷,tulip,Tulipa clusiana,Liliaceae ,12,15.13
+Water Clover,🍀,four_leaf_clover,Marsilea quadrifolia,Marsileaceae ,NA ,NA 
 Watermelon,🍉,watermelon,Citrullus lanatus,Cucurbitaceae ,11,0.5

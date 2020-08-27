@@ -1,3 +1,7 @@
+27/8/2020
+The previous ultrametric tree had a weird topology, I made a new ultrametric tree using V:Phylomaker based on Escudero & Wendel, 2020 
+I've also tidied up the R script for the plots and datasets.
+
 26/8/2020
 Added a ultrametric tree dataset based on Qian & Jin 2016
 
