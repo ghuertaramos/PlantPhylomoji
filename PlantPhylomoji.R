@@ -2,12 +2,12 @@
 
 library(ggplot2)
 library(ape)
-
-#ggtree and emojifont can be installed from bioconductor
-#if (!requireNamespace("BiocManager", quietly = TRUE))
+library(gridSVG)
+# ggtree and emojifont can be installed from bioconductor
+# if (!requireNamespace("BiocManager", quietly = TRUE))
 #   install.packages("BiocManager")
-#BiocManager::install("ggtree")
-#BiocManager::install("emojifont")
+# BiocManager::install("ggtree")
+# BiocManager::install("emojifont")
 
 library(ggtree)
 library(emojifont)
@@ -50,26 +50,26 @@ load("./data/datasets.RData")
 
 ## #PlantPhylomoji The complete dataset (42 Emojis)
 ggtree(plantphylomoji.tree, layout="circular") +
-  geom_tiplab(aes(color=label), parse='emoji', size=6, vjust=0.5, hjust = 0.5, offset = 0.9) +
+  geom_tiplab(parse='emoji', size=6, vjust=0.5, hjust = 0.5, offset = 0.9) +
   labs(title="#PlantPhylomoji", caption="powered by ggtree + emojifont")
-
+ps=grid.export("./images/complete_r_plant_phylomoji.svg", addClasses = T)
 ## #PlantPhylomoji Strict dataset (38 Emojis)
 ggtree(strict.tree, layout="circular") +
-  geom_tiplab(aes(color=label), parse='emoji', size=6, vjust=0.5, hjust = 0.5, offset = 0.9) +
+  geom_tiplab(parse='emoji', size=6, vjust=0.5, hjust = 0.5, offset = 0.9) +
   labs(title="#PlantPhylomoji (Strict Dataset)", caption="powered by ggtree + emojifont")
-
+ps=grid.export("./images/complete_plant_phylomoji.svg", addClasses = T)
 ## #PlantPhylomoji Ultrametric tree (38 Emojis)
 ggtree(plantphylomoji.ul, layout="circular") +
-  geom_tiplab(aes(color=label), parse='emoji',size=6, vjust=0.5, hjust = 0.5, offset = 28) +
+  geom_tiplab(parse='emoji',size=6, vjust=0.5, hjust = 0.5, offset = 28) +
   labs(title="#PlantPhylomoji (Ultrametric)", caption="powered by ggtree + emojifont")
-
+ps=grid.export("./images/ultrametric.svg", addClasses = T)
 ## #PlantPhylomoji Superasterids (40 Emojis)
 ggtree(superasterids.tree, layout="circular") +
-  geom_tiplab(aes(color=label), parse='emoji', size=6, vjust=0.5, hjust = 0.5, offset = 0.9) +
+  geom_tiplab(parse='emoji', size=6, vjust=0.5, hjust = 0.5, offset = 0.9) +
   labs(title="#PlantPhylomoji (Superasterids)", caption="powered by ggtree + emojifont")
-
+ps=grid.export("./images/superasterids.svg", addClasses = T)
 ## #PlantPhylomoji Solanales (6 Emojis)
 ggtree(solanales.tree, layout="circular") +
-  geom_tiplab(aes(color=label), parse='emoji', size=6, vjust=0.5, hjust = 0.5, offset = 0.9) +
+  geom_tiplab(parse='emoji', size=6, vjust=0.5, hjust = 0.5, offset = 0.9) +
   labs(title="#PlantPhylomoji (Solanales)", caption="powered by ggtree + emojifont")
-
+ps=grid.export("./images/solanales.svg", addClasses = T)
