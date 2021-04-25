@@ -19,7 +19,7 @@
    Script to plot PlantPhylomoji trees using R.
 
    [PlantPhylomoji Dataset](./Dataset.md)   
-   Information about the datasets, trees, downloads & references.
+   Information about the dataset, trees, additional images & references.
 
    [PlantPhylomoji tutorial on Jupyter](./PlantPhylomoji.ipynb)  
   Tutorial to plot PlantPhylomoji trees using R & Jupyter.
