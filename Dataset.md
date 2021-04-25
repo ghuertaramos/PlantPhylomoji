@@ -1,4 +1,4 @@
-# PlantPhylomoji Datasets
+# PlantPhylomoji Dataset
 
 The plant phylomoji dataset features the following plant species and character information: 
 
