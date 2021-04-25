@@ -46,7 +46,7 @@ load("./data/datasets.RData")
 # plantphylomoji.tree <- read.tree("./data/plantphylomoji.tree")
 # plantphylomoji.ul <- read.tree("./data/plantphylomoji_ultrametric.tree")
 
-# PlantPhylomoji example plots -----------------------------------------------
+# PlantPhylomoji  radial tree plots -----------------------------------------------
 
 ## #PlantPhylomoji The complete dataset (42 Emojis)
 ggtree(plantphylomoji.tree, layout="circular") +
