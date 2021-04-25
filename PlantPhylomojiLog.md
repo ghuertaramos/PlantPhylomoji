@@ -1,3 +1,7 @@
+24/04/2021
+I added a funding button, will this incetivize the development? 
+I noticed the R  script no longer produces the nice looking emojis natively, so I used the solution from ggtree manual to use librarySVG to generate vectorized files, It worked only in a linux machine but not on windows. I'm thinking about merging the datasetbuilder, phylomaker and plotting scripts it doesn't make to sense to me anymore to have them as separate files.
+
 27/8/2020
 The previous ultrametric tree had a weird topology, I made a new ultrametric tree using V:Phylomaker based on Escudero & Wendel, 2020 
 I've also tidied up the R script for the plots and datasets.
