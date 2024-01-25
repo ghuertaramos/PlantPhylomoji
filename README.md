@@ -32,6 +32,6 @@
  Escudero, M., & Wendel, J. F. The grand sweep of chromosomal evolution in angiosperms. New Phytologist.  doi: [10.1111/nph.16668.](https://nph.onlinelibrary.wiley.com/doi/abs/10.1111/nph.16802)
  
   You may also like:
-  Mammola, S., Falaschi, M., & Ficetola, G. F. (2023). Biodiversity communication in the digital era through the Emoji tree of life. Iscience, 26(12). doi: [10.1016/j.isci.2021.103327](https://www.sciencedirect.com/science/article/pii/S258900422100991X)
+  Mammola, S., Falaschi, M., & Ficetola, G. F. (2023). Biodiversity communication in the digital era through the Emoji tree of life. Iscience, 26(12). doi: [10.1016/j.isci.2023.108569](https://www.sciencedirect.com/science/article/pii/S2589004223026469)
   
   Github user Matad0n has created a new repository with an updated version of plant emojis. Check it out! [REmojiTree](https://github.com/Matad0n/REmojiTree/tree/main)
